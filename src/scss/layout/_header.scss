@@ -1,0 +1,35 @@
+@use 'abstracts/variables' as v;
+
+.header {
+    background-color: v.$blue_darken;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 3em;
+    color: v.$white;
+    .header__brand {
+        width: auto;
+        display: flex;
+        align-items: center;
+        .brand__logo {
+            width: 5rem;
+            height: 5rem;
+        }
+        .brand__title {
+            margin: 0 1rem;
+            font-size: 3rem;
+        }
+    }
+    .nav.header__nav {
+        // flex-basis: 70%;
+        display: flex;
+        gap: 4rem;
+        .nav__link{
+            color: v.$white;
+        }
+    }
+}
+// border: 2px solid v.$yellow-light;
+
+

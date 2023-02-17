@@ -1,0 +1,7 @@
+@use 'abstracts';    // Mixins, functions, variables. Also called "helpers". No styles
+@use 'vendors';     // Third-party stylesheets. Ex: bootstrap, tailwind, etc
+@use 'base';        // Contains boilerplates, resets, typography styles
+@use 'layout';      // Site structure areas (header, footer, nav bars etc) 
+@use 'components';  // Small reusable pieces. Mini layouts. Independents: Buttons, forms
+@use 'pages';       // Page-specific styles. Rules to singular page
+@use 'themes';      // Multiple themes default, light, dark

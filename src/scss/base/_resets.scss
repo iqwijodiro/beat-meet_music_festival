@@ -1,0 +1,39 @@
+@use 'abstracts/variables' as v;
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-padding-top: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+html, body {
+    height: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+img, picture, svg, video {
+    max-width: 100%;
+    display: block;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}

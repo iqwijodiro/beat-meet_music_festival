@@ -1,0 +1,37 @@
+@use 'abstracts/variables' as v;
+
+body {
+    font-family: v.$text-font;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 2rem;
+    color: v.$darken;
+}
+
+.container {
+    width: 95%;
+    max-width: 125rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h2, h3 {
+    margin: 0 0 6rem 0;
+    font-family: v.$title-font;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3.8rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+

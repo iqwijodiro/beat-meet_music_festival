@@ -1,12 +1,13 @@
 @use 'abstracts/variables' as v;
 
 .header {
-    background-color: v.$blue_darken;
+    background: rgb(126,26,124);
+    background: linear-gradient(124deg, rgba(126,26,124,1) 0%, rgba(36,58,116,1) 100%);
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5em 3em;
+    padding: 1em 3em;
     color: v.$white;
     .header__brand {
         width: auto;

@@ -1,0 +1,29 @@
+@use 'abstracts/variables' as v;
+
+.about .container {
+    // display: grid;
+    // grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 8rem 2rem;
+
+}
+.content__wrapper {
+    padding: 5rem 2.8rem;
+    flex: 0 0 35%;
+    background-color: darken($color: v.$blue-darken, $amount: 15);
+    border-radius: 1rem;
+}
+
+.image__wrapper {
+    picture {
+        img {
+            border-radius: 1rem;
+        }
+    }
+    .image__caption {
+        font-size: 1rem;
+    }
+}

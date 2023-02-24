@@ -13,8 +13,9 @@
 </head>
 <body>
 
-    <header class="header">
+    <header class="header container">
         <div class="header__brand">
+            <i class="fal fa-boombox"></i>
             <img src="src/assets/img/boombox.svg" alt="Beat Festival Logo" class="logo brand__logo">
             <h1 class="brand__title">Beat Meet</h1>
         </div>
@@ -25,13 +26,131 @@
             <a href="#" class="nav__link">About</a>
         </nav>
     </header>
+    <!-- Hero Section -->
     <div class="hero">
         <div class="overlay">
             <div class="container hero__content">
+                <h2 class="title">
+                    Meet <br>
+                    <span>
+                        The Beat
+                    </span>  
+                </h2>
+                <p class="super-text">Music Event</p>
+                <div class="container">
+                    <div class="hero__info">
+                        <div class="info__item">
+                            <p class="hero__text hero__text--purple">Beat Party Event</p>
+                            <p class="hero__text">
+                                24, 25 & 26 <br>
+                                <span>April</span>
+                            </p>
 
+                        </div>
+                        <div class="info__item">
+                            <p class="hero__text">
+                                <span class="darked">
+                                    Main artist <br>
+                                </span>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <video autoplay muted loop>
+            <source src="video/concierto.mp4" type="video/mp4">
+            <source src="video//concierto.mp4" type="video/webm">
+            <source src="video//concierto.ogv" type="video/ogv">
+        </video>
     </div>
-    
+    <!-- Hero End -->
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="content__wrapper">
+                <h2 class="title">About the event</h2>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore repudiandae ipsum iste molestias, voluptatibus repellat laborum ratione veritatis vero. Doloribus minus nulla placeat laudantium deleniti reiciendis qui consequuntur perspiciatis rem.</p>
+            </div>
+            <div class="image__wrapper">
+                <picture>
+                    <source srcset="/build/img/purple-party.avif" type="image/avif">
+                    <source srcset="/build/img/purple-party.webp" type="image/webp">
+                    <img loading="lazy" width="300" height="500" src="/build/img/purple-party.jpg" alt="Electronic Festival">
+                </picture>
+                <p class="image__caption">Author: 
+                    <a href="https://unsplash.com/@valentindj?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Valentin bonjour</a> @ <a href="https://unsplash.com/es/fotos/TIdqm0Cl8UA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                </p>
+            </div>
+            <div class="image__wrapper">
+                <picture>
+                    <source srcset="/build/img/fade-performance.avif" type="image/avif">
+                    <source srcset="/build/img/fade-performance.webp" type="image/webp">
+                    <img loading="lazy" width="300" height="500" src="/build/img/fade-performance.jpg" alt="Electronic Party"  >
+                </picture>
+                <p class="image__caption">Author: 
+                    <a href="https://unsplash.com/@valentindj?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Valentin bonjour</a> @ <a href="https://unsplash.com/es/fotos/TIdqm0Cl8UA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                </p>
+            </div>
+            <div class="image__wrapper">
+                <picture>
+                    <source srcset="/build/img/ligths-show.avif" type="image/avif">
+                    <source srcset="/build/img/ligths-show.webp" type="image/webp">
+                    <img loading="lazy" width="300" height="500" src="/build/img/ligths-show.jpg" alt="Lights and Music Performance"  >
+                </picture>
+                <p class="image__caption">Author: 
+                    <a href="https://unsplash.com/@valentindj?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Valentin bonjour</a> @ <a href="https://unsplash.com/es/fotos/TIdqm0Cl8UA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                </p>
+            </div>
+            
+        </div>
+    </section>
+    <!-- About End -->
+    <!-- Line up Section -->
+    <section class="line-up">
+        <h2 class="title">Artist Line up</h2>
+        <div class="line-up__container">
+            <button id="left">
+                <i class="fas fa-caret-left"></i>
+            </button>
+            <div class="carousel">
+                <div class="image-container" id="imgs">
+                    <picture>
+                        <source srcset="/build/img/dj-1.avif" type="image/avif">
+                        <source srcset="/build/img/dj-1.webp" type="image/webp">
+                        <img loading="lazy" width="500" height="500" src="/build/img/dj-1.jpg" alt="Electronic Music Artist"  >
+                    </picture>
+                    <picture>
+                        <source srcset="/build/img/dj-2.avif" type="image/avif">
+                        <source srcset="/build/img/dj-2.webp" type="image/webp">
+                        <img loading="lazy" width="500" height="500" src="/build/img/dj-2.jpg" alt="Electronic Music Artist"  >
+                    </picture>
+                    <picture>
+                        <source srcset="/build/img/dj-3.avif" type="image/avif">
+                        <source srcset="/build/img/dj-3.webp" type="image/webp">
+                        <img loading="lazy" width="500" height="500" src="/build/img/dj-3.jpg" alt="Electronic Music Artist"  >
+                    </picture>
+                    <picture>
+                        <source srcset="/build/img/dj-4.avif" type="image/avif">
+                        <source srcset="/build/img/dj-4.webp" type="image/webp">
+                        <img loading="lazy" width="500" height="500" src="/build/img/dj-4.jpg" alt="Electronic Music Artist"  >
+                    </picture>
+                    <picture>
+                        <source srcset="/build/img/dj-5.avif" type="image/avif">
+                        <source srcset="/build/img/dj-5.webp" type="image/webp">
+                        <img loading="lazy" width="500" height="500" src="/build/img/dj-5.jpg" alt="Electronic Music Artist"  >
+                    </picture>
+                </div>
+                
+            </div>
+            <button id="right">
+                <i class="fas fa-caret-right"></i>
+            </button>
+        </div>
+    </section>
+
+
+    <script src="build/js/app.js"></script>
 </body>
 </html>

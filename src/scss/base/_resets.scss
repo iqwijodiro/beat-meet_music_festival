@@ -24,6 +24,8 @@ p, h1, h2, h3, h4, h5, h6 {
 img, picture, svg, video {
     max-width: 100%;
     display: block;
+    aspect-ratio: 16/9;
+    object-fit: cover;
 }
 
 input, button, textarea, select {

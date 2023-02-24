@@ -4,16 +4,17 @@ body {
     font-family: v.$text-font;
     font-size: 1.8rem;
     line-height: 1.5;
+    background-color: v.$blue_darken;
+    color: v.$white;
 }
 
 p {
     font-size: 2rem;
-    color: v.$darken;
 }
 
 .container {
     width: 95%;
-    max-width: 125rem;
+    max-width: 180rem;
     margin-left: auto;
     margin-right: auto;
 }

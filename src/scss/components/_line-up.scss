@@ -1,0 +1,54 @@
+@use 'abstracts/variables' as v;
+
+.line-up {
+    margin: 7rem auto;
+    h2 {
+        text-align: center;
+    }
+}
+
+.line-up__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        border: none;
+        background-color: rgba($color: v.$white, $alpha: .45);
+        border-radius: 50%;
+        padding: .75rem;
+        height: 2em;
+        width: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i {
+            color: v.$blue-darken;
+        }
+    }
+    button:hover {
+        cursor: pointer;
+        background-color: rgba($color: v.$white, $alpha: .65);
+
+    }
+}
+.carousel {
+    height: 600px;
+    width: 500px;
+    min-width: 350px;
+    overflow: hidden;
+}
+.image-container {
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+    picture {
+        display: block;
+        width: 100%;
+        height: 600px;
+        img {
+            border-radius: 1rem;
+        }
+    }
+}

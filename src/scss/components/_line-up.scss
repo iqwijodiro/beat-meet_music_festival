@@ -1,9 +1,73 @@
 @use 'abstracts/variables' as v;
 
 .line-up {
-    margin: 7rem auto;
-    h2 {
+    padding: 7rem auto;
+    background-image: url(../../../build/img/line-up_bg.webp), url(../../../build/img/line-up_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80rem;
+    min-height: 65rem;
+    position: relative;
+    .overlay {
+        position: absolute;
+        background-color: rgba($color: #000, $alpha: .75);
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.line-up__wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 7rem 0;
+    .line-up__title {
         text-align: center;
+        text-shadow: rgba(210,59,175,1) 10px 5px 40px; 
+        span.blur {
+            display: block;
+            box-shadow: 0px 10px 100px 30px rgba(210,59,175,1);
+        }
+    }
+    .ring {
+        display: inline;
+        position: absolute;
+    }
+    .ring:nth-child(1) {
+        top: 20%;
+        left: 5%;
+        width: 200px;
+        height: 200px;
+    }
+    .ring:nth-child(2) {
+        top: 60%;
+        left: 15%;
+        width: 100px;
+        height: 100px;
+    }
+    .ring:nth-child(3) {
+        top: 30%;
+        left: 80%;
+        width: 300px;
+        height: 300px;
+    }
+    .ring:nth-child(4) {
+        top: 70%;
+        left: 80%;
+        width: 50px;
+        height: 50px;
+    }
+    .ring:nth-child(5) {
+        top: 70%;
+        left: 5%;
+        width: 170px;
+        height: 170px;
+    }
+    .ring:nth-child(6) {
+        top: 80%;
+        left: 70%;
+        width: 150px;
+        height: 150px;
     }
 }
 
@@ -44,11 +108,17 @@
     transform: translateX(0);
     transition: transform 0.5s ease-in-out;
     picture {
+        position: relative;
         display: block;
         width: 100%;
-        height: 600px;
+        height: 500px;
         img {
             border-radius: 1rem;
+        }
+        .image__title {
+            position: absolute;
+            top: 90%;
+            left: 10%;
         }
     }
 }

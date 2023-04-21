@@ -3,7 +3,8 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
-    scroll-padding-top: 0;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
 }
 
 *,

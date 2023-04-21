@@ -1,3 +1,5 @@
+'use-strict';
+
 const imageContainer = document.querySelector('.image-container');
 const leftBtn = document.querySelector('#left');
 const rightBtn = document.querySelector('#right');
@@ -5,13 +7,13 @@ const img = document.querySelectorAll('.image-container picture');
 
 let i = 0
 
-let interval = setInterval(run, 3000)
 
-const run = ()=>{
+function run (){
     i++;
     changeImg()
 }
 
+let interval = setInterval(run, 3000)
 const changeImg = ()=> {
 
     if (i > img.length - 1) {
